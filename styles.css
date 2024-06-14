@@ -1,0 +1,81 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.player {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px;
+}
+
+.video {
+    width: 100%;
+    border-bottom: 2px solid #4facfe;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+.control-btn, .speed-btn {
+    background: #4facfe;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.control-btn:hover, .speed-btn:hover {
+    background: #00c6ff;
+}
+
+.volume-slider {
+    margin: 10px 0;
+    width: 100%;
+}
+
+.speed-control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#speed {
+    margin: 0 10px;
+    font-size: 1.2em;
+}
+
+@media (max-width: 600px) {
+    .controls {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .control-btn, .speed-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .volume-slider {
+        width: 100%;
+    }
+}

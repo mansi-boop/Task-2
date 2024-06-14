@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Video Player</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="player">
+        <video id="video" class="video" controls>
+            <source src="priyanka chopra.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="controls">
+            <button id="playPause" class="control-btn">Play/Pause</button>
+            <input type="range" id="volume" class="volume-slider" min="0" max="1" step="0.1">
+            <div class="speed-control">
+                <button id="speedDown" class="speed-btn">-</button>
+                <span id="speed">1x</span>
+                <button id="speedUp" class="speed-btn">+</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
